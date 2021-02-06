@@ -1,4 +1,4 @@
-# BlockchainMail
+# Blockchain Mail
 
 ## Steps
 
