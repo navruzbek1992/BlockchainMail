@@ -19,3 +19,5 @@ Sender win asks friend address. You can paste friend address but if you want to 
 Enjoy chatting with friends.
 
 In the future, contract will be extended to handle group chats. So far it is 1:1 chat.
+Also messages are not encrypted. To keep things safe it is for simple chat only.
+In the future contract will encrypt messages. 
