@@ -17,3 +17,5 @@ You get message in receiver win and send message in sender win.
 Sender win asks friend address. You can paste friend address but if you want to keep things comfy, just type "friendAddress".
 
 Enjoy chatting with friends.
+
+In the future, contract will be extended to handle group chats. So far it is 1:1 chat.
