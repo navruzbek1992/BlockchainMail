@@ -2,7 +2,7 @@
 
 ## Steps
 
-- Copy receiver, sender, requirements and credentials file in folder
+- Download and unzip repo folder
 - In credentials file include your address and key for signing and sending message
 - In credentials file include your friends address
 - In credentials include infura project link
