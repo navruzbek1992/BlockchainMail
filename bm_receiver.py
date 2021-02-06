@@ -35,33 +35,35 @@ bm_contract_instance = w3.eth.contract(address=bmAddress, abi=bm_json["abi"],)
 print("-------------------------------------------------")
 
 ## get events
+blockNumberOld = 0
 while True:
 
-    # print("Getting new events")
-    events_new = bm_contract_instance.events.MailTransfer.createFilter(
-        fromBlock="latest"
-    ).get_all_entries()
+    blockNumber = w3.eth.blockNumber
+    if blockNumber != blockNumberOld:
+        events_new = bm_contract_instance.events.MailTransfer.createFilter(
+            fromBlock=blockNumber
+        ).get_all_entries()
+        blockNumberOld = blockNumber
+        for event in events_new:
+            if event["args"]["receiverAddress"] == ownerAddress:
 
-    for event in events_new:
-        if event["args"]["receiverAddress"] == ownerAddress:
+                print("-------------------------------------------------")
+                print("*****************RECEIVED MAIL*****************")
+                ## when there is event about receive letter
+                frequency = 2500
+                duration = 500
+                winsound.Beep(frequency, duration)
 
-            print("-------------------------------------------------")
-            print("*****************RECEIVED MAIL*****************")
-            ## when there is event about receive letter
-            frequency = 2500
-            duration = 500
-            winsound.Beep(frequency, duration)
+                senderAddress = event["args"]["senderAddress"]
+                print("Sender")
+                print(senderAddress)
 
-            senderAddress = event["args"]["senderAddress"]
-            print("Sender")
-            print(senderAddress)
+                receiverAddress = event["args"]["receiverAddress"]
+                # print("Receiver")
+                # print(receiverAddress)
 
-            receiverAddress = event["args"]["receiverAddress"]
-            # print("Receiver")
-            # print(receiverAddress)
-
-            mail = bm_contract_instance.functions.receiveLatestLetter(
-                senderAddress
-            ).call({"from": receiverAddress})
-            print(mail)
-            print("-------------------------------------------------")
+                mail = bm_contract_instance.functions.receiveLatestLetter(
+                    senderAddress
+                ).call({"from": receiverAddress})
+                print(mail)
+                print("-------------------------------------------------")
