@@ -15,16 +15,17 @@ print("Extracting owner, contract and receiver related info")
 with open("blockchainmail_credentials.json", "r") as json_data:
     credentials = json.load(json_data)
 
-## for dev purpose
-answer = input("Are you owner? (yes or no) ")
+# ## for dev purpose
+# answer = input("Are you owner? (yes or no) ")
 
-if answer == "yes":
-    ownerAddress = credentials["ownerAddress"]
-    ownerPrivateKey = credentials["ownerPrivateKey"]
-else:
-    ownerAddress = credentials["friendAddress"]
-    ownerPrivateKey = credentials["friendPrivateKey"]
-
+# if answer == "yes":
+#     ownerAddress = credentials["ownerAddress"]
+#     ownerPrivateKey = credentials["ownerPrivateKey"]
+# else:
+#     ownerAddress = credentials["friendAddress"]
+#     ownerPrivateKey = credentials["friendPrivateKey"]
+ownerAddress = credentials["ownerAddress"]
+ownerPrivateKey = credentials["ownerPrivateKey"]
 bmAddress = credentials["BMAddress"]
 
 with open("build/contracts/BlockchainMail.json", "r") as outfile:
