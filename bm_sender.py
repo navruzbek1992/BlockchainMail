@@ -7,7 +7,7 @@ import codecs
 import time
 import winsound
 
-w3 = Web3(Web3.WebsocketProvider("ws://127.0.0.1:8545", websocket_timeout=200))
+# w3 = Web3(Web3.WebsocketProvider("ws://127.0.0.1:8545", websocket_timeout=200))
 
 print("-------------------------------------------------")
 print("Extracting owner, contract and receiver related info")
@@ -17,16 +17,19 @@ with open("blockchainmail_credentials.json", "r") as json_data:
 
 # ## for dev purpose
 # answer = input("Are you owner? (yes or no) ")
-
+#
 # if answer == "yes":
 #     ownerAddress = credentials["ownerAddress"]
 #     ownerPrivateKey = credentials["ownerPrivateKey"]
 # else:
 #     ownerAddress = credentials["friendAddress"]
 #     ownerPrivateKey = credentials["friendPrivateKey"]
+
 ownerAddress = credentials["ownerAddress"]
 ownerPrivateKey = credentials["ownerPrivateKey"]
 bmAddress = credentials["BMAddress"]
+infuraLink = credentials["infuraLink"]
+w3 = Web3(Web3.WebsocketProvider(infuraLink, websocket_timeout=200))
 
 with open("build/contracts/BlockchainMail.json", "r") as outfile:
     bm_json = json.load(outfile)
