@@ -12,7 +12,7 @@ import winsound
 print("-------------------------------------------------")
 print("Extracting owner, contract and receiver related info")
 
-with open("blockchainmail_credentials.json", "r") as json_data:
+with open("credentials.json", "r") as json_data:
     credentials = json.load(json_data)
 
 # ## for dev purpose
@@ -31,7 +31,7 @@ bmAddress = credentials["BMAddress"]
 infuraLink = credentials["infuraLink"]
 w3 = Web3(Web3.WebsocketProvider(infuraLink, websocket_timeout=200))
 
-with open("build/contracts/BlockchainMail.json", "r") as outfile:
+with open("BlockchainMail.json", "r") as outfile:
     bm_json = json.load(outfile)
 
 bm_contract_instance = w3.eth.contract(address=bmAddress, abi=bm_json["abi"],)
