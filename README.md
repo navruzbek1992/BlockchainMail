@@ -1,6 +1,6 @@
 # Blockchain Mail
 
-BM is live in ropsten. Here is the address 0x176A3014B7D16b5684A0B8a116d68fA28099Cd92.
+BM is live in ropsten. Here is the address 0x176A3014B7D16b5684A0B8a116d68fA28099Cd92 and link https://ropsten.etherscan.io/address/0x176A3014B7D16b5684A0B8a116d68fA28099Cd92.
 
 ## Steps
 
