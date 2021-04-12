@@ -31,3 +31,14 @@ Enjoy chatting with friends.
 In the future, contract will be extended to handle group chats. So far it is 1:1 chat.
 Also messages are not encrypted. To keep things safe it is for simple chat only.
 In the future contract will encrypt messages. 
+
+## Executable file
+
+Executable files are in .zip folder. 
+
+### Steps
+- Download and unzip them. 
+- No need python installation or infura link is required. 
+- Only thing is to get matic testnet tokens (https://faucet.matic.network/).
+- Open blockchain.exe file in unzipped folder. Gui will appear.
+- 
