@@ -34,11 +34,12 @@ In the future contract will encrypt messages.
 
 ## Executable file
 
-Executable files are in .zip folder. 
+Executable files are in blockchainmail.zip folder. 
 
 ### Steps
 - Download and unzip them. 
 - No need python installation or infura link is required. 
 - Only thing is to get matic testnet tokens (https://faucet.matic.network/).
-- Open blockchain.exe file in unzipped folder. Gui will appear.
-- 
+- Open blockchain.exe file in unzipped folder. GUI will appear. 
+- Enter sender (your), receiver (friend) and private key info. And press connect.
+- After connection receive mail or send mail.
