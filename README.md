@@ -8,7 +8,7 @@ Works only with ropsten deployed contract.
 
 ### Steps
 
-- Download and unzip repo folder
+- Download repo and unzip
 - In credentials file include your address and key for signing and sending message
 - In credentials file include your friends address (Currently my address is included. Feel free to replace with other peoples address)
 - In credentials include infura project ID
@@ -26,7 +26,7 @@ Works only with ropsten deployed contract.
 
 ### Steps
 
-- Download and unzip repo folder
+- Download repo and unzip
 - Have a ready infura link 
 - In CMD (or anaconda prompt) run `pip install -r requirements.txt`
 - In a seperate CMD (or anaconda prompt) run `python bmgui.py`
@@ -43,7 +43,7 @@ In the future contract will encrypt messages.
 Executable files are in blockchainmail.zip folder. Works only with mumbai deployed contract.
 
 ### Steps
-- Download and unzip them. 
+- Download blockchainmail.zip and unzip. 
 - No need python installation or infura link is required. 
 - Only thing is to get matic testnet tokens (https://faucet.matic.network/).
 - Open blockchain.exe file in unzipped folder. GUI will appear. 
