@@ -1,8 +1,11 @@
 # Blockchain Mail
 
-BM is live in ropsten. Here is the address 0x176A3014B7D16b5684A0B8a116d68fA28099Cd92 and link https://ropsten.etherscan.io/address/0x176A3014B7D16b5684A0B8a116d68fA28099Cd92.
+BM is live on ropsten (https://ropsten.etherscan.io/address/0x176A3014B7D16b5684A0B8a116d68fA28099Cd92) and on mumbai (https://explorer-mumbai.maticvigil.com/address/0x70a6fd6AB3ed7730C83D2Ab8C3e6F77AB507bB05/transactions).
 
 ## For developers
+
+Works only with ropsten deployed contract.
+
 ### Steps
 
 - Download and unzip repo folder
@@ -18,6 +21,9 @@ You get message in receiver win and send message in sender win.
 Sender win asks friend address. You can paste friend address but if you want to keep things comfy, just type "friendAddress".
 
 ## GUI 
+
+Works only with ropsten deployed contract.
+
 ### Steps
 
 - Download and unzip repo folder
@@ -34,7 +40,7 @@ In the future contract will encrypt messages.
 
 ## Executable file
 
-Executable files are in blockchainmail.zip folder. 
+Executable files are in blockchainmail.zip folder. Works only with mumbai deployed contract.
 
 ### Steps
 - Download and unzip them. 
