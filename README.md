@@ -48,4 +48,4 @@ Executable files are in blockchainmail.zip folder. Works only with mumbai deploy
 - Only thing is to get matic testnet tokens (https://faucet.matic.network/).
 - Open blockchain.exe file in unzipped folder. GUI will appear. 
 - Enter sender (your), receiver (friend) and private key info. And press connect.
-- After connection receive mail or send mail.
+- After connection user can receive mail or send mail.
