@@ -4,9 +4,10 @@ BM is live on ropsten (https://ropsten.etherscan.io/address/0x176A3014B7D16b5684
 
 ## For developers
 
+### Scripts
 Works only with ropsten deployed contract.
 
-### Steps
+#### Steps
 
 - Download repo and unzip
 - In credentials file include your address and key for signing and sending message
@@ -20,11 +21,11 @@ Keep running receiver and sender in separate CMD.
 You get message in receiver win and send message in sender win.
 Sender win asks friend address. You can paste friend address but if you want to keep things comfy, just type "friendAddress".
 
-## GUI 
+### GUI 
 
 Works only with ropsten deployed contract.
 
-### Steps
+#### Steps
 
 - Download repo and unzip
 - Have a ready infura link 
@@ -38,7 +39,7 @@ In the future, contract will be extended to handle group chats. So far it is 1:1
 Also messages are not encrypted. To keep things safe it is for simple chat only.
 In the future contract will encrypt messages. 
 
-## Executable file
+## Executable file (for non developers)
 
 Executable files are in blockchainmail.zip folder. Works only with mumbai deployed contract.
 
